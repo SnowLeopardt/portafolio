@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry Sanchez</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+
+    <!-- Stylesheets -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        footer .social-icons {
+            margin-top: 15px;
+        }
+        footer .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        footer .social-icons a:hover {
+            color: #000;
+        }
+        .linkedin-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+        }
+        .linkedin-icon a {
+            color: #000;
+        }
+        .btn-fill {
+            background-color: #121213;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .btn-border {
+            border: 2px solid #000;
+            color: #000;
+            background: transparent;
+            padding: 10px 20px;
+        }
+        #language-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 999;
+            padding: 10px 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+    <button id="language-toggle">EN</button>
+
+    
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+                    <ul class="nav navbar-nav navbar-right" id="nav-links">
+                        <li><a href="#hero" data-es="Inicio" data-en="Home">Inicio</a></li>
+                        <li><a href="#about" data-es="Sobre Mí" data-en="About Me">Sobre Mí</a></li>
+                        <li><a href="#service" data-es="Intereses" data-en="Interests">Intereses</a></li>
+                        <li><a href="#portfolio" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                        <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección hero -->
+<div id="hero" class="hero" style="position: relative; padding-top: 120px;">
+    <!-- Logo centrado arriba -->
+    <div id="logo-container" style="position: absolute; top: 50px; left: 44%; transform: translateX(-50%); z-index: 1000;">
+        <img src="logo.png" alt="Mi Logo" style="height: 180px;">
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1>Henry Sanchez</h1>
+                <p id="job-title">Desarrollador Frontend</p>
+                <a href="#contact" class="btn btn-fill" id="hire-me">Contrátame</a>
+                <a href="#portfolio" class="btn btn-border" id="explore-more">Explora más</a>
+            </div>
+            <div class="col-md-6 text-right">
+                <img src="henry.png" alt="Henry Sanchez">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <main id="main" class="site-main">
+        <section id="about" class="site-section section-about text-center">
+            <div class="container">
+                <h2 id="about-title">Sobre Mí</h2>
+                <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                <p id="about-text-1">
+                    Soy un desarrollador apasionado por el diseño y la creación de experiencias web intuitivas. Con conocimientos sólidos en HTML, CSS y Bootstrap, me especializo en construir interfaces responsivas y atractivas que ofrecen una experiencia de usuario fluida.
+
+                    A lo largo de mi trayectoria, he trabajado en varios proyectos que requieren una integración eficiente entre el frontend , utilizando también PHP para vincular el diseño visual con la lógica del servidor. Me enfoco en asegurar que cada proyecto sea funcional, accesible y visualmente agradable, sin perder de vista los detalles técnicos
+                </p>
+                <p id="about-text-2">
+                    Siempre estoy aprendiendo nuevas herramientas y enfoques para mejorar mis habilidades, buscando aplicar las mejores prácticas en cada uno de mis proyectos. Mi objetivo es crear soluciones innovadoras y efectivas que puedan ser utilizadas por cualquier usuario, independientemente del dispositivo que utilicen.
+                </p>
+                <a href="CV.pdf" class="btn btn-fill" target="_blank" download id="download-cv">Descargar CV</a>
+            </div>
+        </section>
+
+        <section id="service" class="site-section section-skills">
+            <div class="container">
+                <div class="text-center">
+                    <h3 id="skills-title">Mis Habilidades</h3>
+                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="skill"><h4>HTML</h4><div class="progress"><div class="progress-bar" data-transitiongoal="80"></div></div></div>
+                        <div class="skill"><h4>Redes Públicas</h4><div class="progress"><div class="progress-bar" data-transitiongoal="75"></div></div></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill"><h4>Inglés</h4><div class="progress"><div class="progress-bar" data-transitiongoal="55"></div></div></div>
+                        <div class="skill"><h4>CSS</h4><div class="progress"><div class="progress-bar" data-transitiongoal="80"></div></div></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill"><h4>PHP</h4><div class="progress"><div class="progress-bar" data-transitiongoal="47"></div></div></div>
+                        <div class="skill"><h4>Bootstrap</h4><div class="progress"><div class="progress-bar" data-transitiongoal="65"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="site-section section-portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h3 id ="portfolio-title">Proyectos</h3>
+                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="redes1.jpg" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Distribuidoras de alimentos agricolas</h4>
+                                <a href="redes.jpg" target="_blank"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/portfolio-2.jpg" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Calculadora de impuestos</h4>
+                                <a href="calculadora.jpg" target="_blank"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <a href="https://github.com/SnowLeopardt/calculadora.git"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/portfolio-3.jpg" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Formulario de Clinica</h4>
+                                <a href="clinica.jpg" target="_blank"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <a href="https://github.com/SnowLeopardt/CLINICA.git"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                </div>
+            </section><!-- /.secton-portfolio -->
+
+    </main>
+
+    <footer>
+        <p>© 2025 Henry Sanchez. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!-- Script para cambiar de idioma -->
+    <script>
+        const toggle = document.getElementById('language-toggle');
+        let isSpanish = true;
+
+        toggle.addEventListener('click', () => {
+            isSpanish = !isSpanish;
+            toggle.textContent = isSpanish ? 'EN' : 'ES';
+
+            document.getElementById('job-title').textContent = isSpanish ? 'Desarrollador Frontend' : 'Frontend Developer';
+            document.getElementById('hire-me').textContent = isSpanish ? 'Contrátame' : 'Hire Me';
+            document.getElementById('explore-more').textContent = isSpanish ? 'Explora más' : 'Explore More';
+            document.getElementById('about-title').textContent = isSpanish ? 'Sobre Mí' : 'About Me';
+            document.getElementById('about-text-1').textContent = isSpanish 
+                ? 'Soy un desarrollador apasionado por el diseño y la creación de experiencias web intuitivas. Con conocimientos sólidos en HTML, CSS y Bootstrap, me especializo en construir interfaces responsivas y atractivas que ofrecen una experiencia de usuario fluida.   A lo largo de mi trayectoria, he trabajado en varios proyectos que requieren una integración eficiente entre el frontend , utilizando también PHP para vincular el diseño visual con la lógica del servidor. Me enfoco en asegurar que cada proyecto sea funcional, accesible y visualmente agradable, sin perder de vista los detalles técnicos' 
+                : 'Im a developer passionate about designing and creating intuitive web experiences. With a solid understanding of HTML, CSS, and Bootstrap, I specialize in building responsive and engaging interfaces that offer a fluid user experience.Throughout my career, Ive worked on several projects requiring efficient front-end integration, also using PHP to link the visual design with server-side logic. I focus on ensuring each project is functional, accessible, and visually pleasing, while keeping an eye on the technical details.';
+            document.getElementById('about-text-2').textContent = isSpanish 
+                ? 'Siempre estoy aprendiendo nuevas herramientas y enfoques para mejorar mis habilidades, buscando aplicar las mejores prácticas en cada uno de mis proyectos. Mi objetivo es crear soluciones innovadoras y efectivas que puedan ser utilizadas por cualquier usuario, independientemente del dispositivo que utilicen.' 
+                : 'Im always learning new tools and approaches to improve my skills, seeking to apply best practices to each of my projects. My goal is to create innovative and effective solutions that can be used by any user, regardless of their device.';
+            document.getElementById('download-cv').textContent = isSpanish ? 'Descargar CV' : 'Download CV';
+            document.getElementById('skills-title').textContent = isSpanish ? 'Mis Habilidades' : 'My Skills';
+            document.getElementById('portfolio-title').textContent = isSpanish ? 'Proyectos' : 'Projects';
+
+            // Navegación
+            document.querySelectorAll('#nav-links a').forEach(link => {
+                link.textContent = isSpanish ? link.getAttribute('data-es') : link.getAttribute('data-en');
+            });
+        });
+    </script>
+
+       
+  
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('primary-navigation');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+
+
+
+
+  
+</body>
+</html>
