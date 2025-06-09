@@ -13,7 +13,7 @@
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
 
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -152,7 +152,8 @@
                 <p id="about-text-2">
                     Siempre estoy aprendiendo nuevas herramientas y enfoques para mejorar mis habilidades, buscando aplicar las mejores prácticas en cada uno de mis proyectos. Mi objetivo es crear soluciones innovadoras y efectivas que puedan ser utilizadas por cualquier usuario, independientemente del dispositivo que utilicen.
                 </p>
-                <a href="CV.pdf" class="btn btn-fill" target="_blank" download id="download-cv">Descargar CV</a>
+                <a href="CV.pdf" class="btn btn-fill" target="_blank" id="download-cv">Descargar CV</a>
+
             </div>
         </section>
 
@@ -165,7 +166,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="skill"><h4>HTML</h4><div class="progress"><div class="progress-bar" data-transitiongoal="80"></div></div></div>
-                        <div class="skill"><h4>Redes Públicas</h4><div class="progress"><div class="progress-bar" data-transitiongoal="75"></div></div></div>
+                        <div class="skill"><h4>MySql</h4><div class="progress"><div class="progress-bar" data-transitiongoal="75"></div></div></div>
                     </div>
                     <div class="col-md-4">
                         <div class="skill"><h4>Inglés</h4><div class="progress"><div class="progress-bar" data-transitiongoal="55"></div></div></div>
@@ -192,6 +193,11 @@
                             <div class="portfolio-item-info">
                                 <h4>Distribuidoras de alimentos agricolas</h4>
                                 <a href="redes.jpg" target="_blank"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <p data-es="Diseño y desarrollo sobre distribuicion de alimentos agricolas mediante una red ipv4/ipv6" 
+                                data-en="Design and development of agricultural food distribution using an IPv4/IPv6 network">
+                                Diseño y desarrollo sobre distribuicion de alimentos agricolas mediante una red ipv4/ipv6
+                                </p>
+
                             </div><!-- /.portfolio-item-info -->
                         </div>
                     </div>
@@ -202,6 +208,10 @@
                                 <h4>Calculadora de impuestos</h4>
                                 <a href="calculadora.jpg" target="_blank"><span class="glyphicon glyphicon-eye-open"></span></a>
                                 <a href="https://github.com/SnowLeopardt/calculadora.git"><span class="glyphicon glyphicon-link"></span></a>
+                                <p data-es="Herramienta desarrollada en PHP y HTML para calcular impuestos personales con base en diferentes tasas fiscales." 
+                                data-en="Tool developed in PHP and HTML to calculate personal taxes based on different fiscal rates.">
+                                Herramienta desarrollada en PHP y HTML para calcular impuestos personales con base en diferentes tasas fiscales.
+                                </p>
                             </div><!-- /.portfolio-item-info -->
                         </div><!-- /.portfolio-item -->
                     </div>
@@ -212,51 +222,146 @@
                                 <h4>Formulario de Clinica</h4>
                                 <a href="clinica.jpg" target="_blank"><span class="glyphicon glyphicon-eye-open"></span></a>
                                 <a href="https://github.com/SnowLeopardt/CLINICA.git"><span class="glyphicon glyphicon-link"></span></a>
+                                <p data-es="Desarrollo de CRUD, Historias clinicas para control de registro de pacientes en una clinica" 
+                                data-en="CRUD development, clinical histories for patient record control in a clinic">
+                                Desarrollo de CRUD, Historias clinicas para control de registro de pacientes en una clinica
+                                </p>
                             </div><!-- /.portfolio-item-info -->
                         </div><!-- /.portfolio-item -->
                     </div>
                 </div>
             </section><!-- /.secton-portfolio -->
 
+
+
+
+            <section class="site-section section-counters text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <p class="counter start" data-to="3" data-speed="2000">0</p>
+                            <h4>Años de experiencia</h4>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <p class="counter start" data-to="6" data-speed="2000">0</p>       
+                            <h4>Proyectos Realizados</h4>      
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
+                            <h4>Tiempo en el sitio!<br>Que estas esperando?</h4>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- /.section-counters -->
+
+
+            <section id="contact" class="site-section section-form text-center">
+                <div class="container">
+    
+                    <h3>Contacto</h3>
+                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" name="name" class="form-control mt-x-0" placeholder="Nombre" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" name="email" class="form-control" placeholder="Correo" required>   
+                            </div>
+                            <div class="col-sm-12">
+                                <textarea name="message" id="mesaage" class="form-control" placeholder="Mensaje..." required></textarea>
+                            </div>
+                        </div>
+                        <button href="#" class="btn btn-border" type="submit">Contratame<span class="glyphicon glyphicon-send"></span></button>
+                    </form>
+                </div>
+            </section><!-- /.section-form -->
+
+            
+
     </main>
 
     <footer>
         <p>© 2025 Henry Sanchez. Todos los derechos reservados.</p>
         <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/henry-anderson-sanchez-cortez-b2305734b/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/SnowLeopardt"><i class="fab fa-github"></i></a>
         </div>
     </footer>
 
     <!-- Script para cambiar de idioma -->
+    <!-- Script para cambiar de idioma -->
     <script>
         const toggle = document.getElementById('language-toggle');
         let isSpanish = true;
-
+      
         toggle.addEventListener('click', () => {
-            isSpanish = !isSpanish;
-            toggle.textContent = isSpanish ? 'EN' : 'ES';
+          isSpanish = !isSpanish;
+          toggle.textContent = isSpanish ? 'EN' : 'ES';
+      
+          // Textos principales
+          document.getElementById('job-title').textContent = isSpanish ? 'Desarrollador Frontend' : 'Frontend Developer';
+          document.getElementById('hire-me').textContent = isSpanish ? 'Contrátame' : 'Hire Me';
+          document.getElementById('explore-more').textContent = isSpanish ? 'Explora más' : 'Explore More';
+          document.getElementById('about-title').textContent = isSpanish ? 'Sobre Mí' : 'About Me';
+      
+          // Sobre mí - párrafos
+          document.getElementById('about-text-1').textContent = isSpanish
+            ? 'Soy un desarrollador apasionado por el diseño y la creación de experiencias web intuitivas. Con conocimientos sólidos en HTML, CSS y Bootstrap, me especializo en construir interfaces responsivas y atractivas que ofrecen una experiencia de usuario fluida. A lo largo de mi trayectoria, he trabajado en varios proyectos que requieren una integración eficiente entre el frontend, utilizando también PHP para vincular el diseño visual con la lógica del servidor. Me enfoco en asegurar que cada proyecto sea funcional, accesible y visualmente agradable, sin perder de vista los detalles técnicos.'
+            : "I'm a developer passionate about designing and creating intuitive web experiences. With a solid understanding of HTML, CSS, and Bootstrap, I specialize in building responsive and engaging interfaces that offer a fluid user experience. Throughout my career, I've worked on several projects requiring efficient front-end integration, also using PHP to link the visual design with server-side logic. I focus on ensuring each project is functional, accessible, and visually pleasing, while keeping an eye on the technical details.";
+      
+          document.getElementById('about-text-2').textContent = isSpanish
+            ? 'Siempre estoy aprendiendo nuevas herramientas y enfoques para mejorar mis habilidades, buscando aplicar las mejores prácticas en cada uno de mis proyectos. Mi objetivo es crear soluciones innovadoras y efectivas que puedan ser utilizadas por cualquier usuario, independientemente del dispositivo que utilicen.'
+            : "I'm always learning new tools and approaches to improve my skills, seeking to apply best practices to each of my projects. My goal is to create innovative and effective solutions that can be used by any user, regardless of their device.";
+      
+          // Botón CV
+          document.getElementById('download-cv').textContent = isSpanish ? 'Descargar CV' : 'Download CV';
+      
+          // Habilidades y proyectos
+          document.getElementById('skills-title').textContent = isSpanish ? 'Mis Habilidades' : 'My Skills';
+          document.getElementById('portfolio-title').textContent = isSpanish ? 'Proyectos' : 'Projects';
+      
+          // Nombres de proyectos
+          const projectTitles = document.querySelectorAll('.portfolio-item-info h4');
+          if (projectTitles.length >= 3) {
+            projectTitles[0].textContent = isSpanish ? 'Distribuidoras de alimentos agrícolas' : 'Agricultural Food Distributors';
+            projectTitles[1].textContent = isSpanish ? 'Calculadora de impuestos' : 'Tax Calculator';
+            projectTitles[2].textContent = isSpanish ? 'Formulario de Clínica' : 'Clinic Form';
+          }
+          // Traducción descripciones de proyectos
+          const projectDescriptions = document.querySelectorAll('.portfolio-item-info p');
+          projectDescriptions.forEach(p => {
+          p.textContent = isSpanish ? p.getAttribute('data-es') : p.getAttribute('data-en');
+          });
 
-            document.getElementById('job-title').textContent = isSpanish ? 'Desarrollador Frontend' : 'Frontend Developer';
-            document.getElementById('hire-me').textContent = isSpanish ? 'Contrátame' : 'Hire Me';
-            document.getElementById('explore-more').textContent = isSpanish ? 'Explora más' : 'Explore More';
-            document.getElementById('about-title').textContent = isSpanish ? 'Sobre Mí' : 'About Me';
-            document.getElementById('about-text-1').textContent = isSpanish 
-                ? 'Soy un desarrollador apasionado por el diseño y la creación de experiencias web intuitivas. Con conocimientos sólidos en HTML, CSS y Bootstrap, me especializo en construir interfaces responsivas y atractivas que ofrecen una experiencia de usuario fluida.   A lo largo de mi trayectoria, he trabajado en varios proyectos que requieren una integración eficiente entre el frontend , utilizando también PHP para vincular el diseño visual con la lógica del servidor. Me enfoco en asegurar que cada proyecto sea funcional, accesible y visualmente agradable, sin perder de vista los detalles técnicos' 
-                : 'Im a developer passionate about designing and creating intuitive web experiences. With a solid understanding of HTML, CSS, and Bootstrap, I specialize in building responsive and engaging interfaces that offer a fluid user experience.Throughout my career, Ive worked on several projects requiring efficient front-end integration, also using PHP to link the visual design with server-side logic. I focus on ensuring each project is functional, accessible, and visually pleasing, while keeping an eye on the technical details.';
-            document.getElementById('about-text-2').textContent = isSpanish 
-                ? 'Siempre estoy aprendiendo nuevas herramientas y enfoques para mejorar mis habilidades, buscando aplicar las mejores prácticas en cada uno de mis proyectos. Mi objetivo es crear soluciones innovadoras y efectivas que puedan ser utilizadas por cualquier usuario, independientemente del dispositivo que utilicen.' 
-                : 'Im always learning new tools and approaches to improve my skills, seeking to apply best practices to each of my projects. My goal is to create innovative and effective solutions that can be used by any user, regardless of their device.';
-            document.getElementById('download-cv').textContent = isSpanish ? 'Descargar CV' : 'Download CV';
-            document.getElementById('skills-title').textContent = isSpanish ? 'Mis Habilidades' : 'My Skills';
-            document.getElementById('portfolio-title').textContent = isSpanish ? 'Proyectos' : 'Projects';
-
-            // Navegación
-            document.querySelectorAll('#nav-links a').forEach(link => {
-                link.textContent = isSpanish ? link.getAttribute('data-es') : link.getAttribute('data-en');
-            });
+      
+          // Contadores
+          const counters = document.querySelectorAll('.section-counters h4');
+          if (counters.length >= 3) {
+            counters[0].textContent = isSpanish ? 'Años de experiencia' : 'Years of Experience';
+            counters[1].textContent = isSpanish ? 'Proyectos Realizados' : 'Completed Projects';
+            counters[2].innerHTML = isSpanish ? 'Tiempo en el sitio!<br>¿Qué estás esperando?' : 'Time on Site!<br>What are you waiting for?';
+          }
+      
+          // Sección contacto
+          document.querySelector('#contact h3').textContent = isSpanish ? 'Contacto' : 'Contact';
+          document.querySelector('input[name="name"]').placeholder = isSpanish ? 'Nombre' : 'Name';
+          document.querySelector('input[name="email"]').placeholder = isSpanish ? 'Correo' : 'Email';
+          document.querySelector('textarea[name="message"]').placeholder = isSpanish ? 'Mensaje...' : 'Message...';
+          document.querySelector('#contact button').textContent = isSpanish ? 'Contrátame' : 'Hire Me';
+      
+          // Footer
+          document.querySelector('footer p').textContent = isSpanish
+            ? '© 2025 Henry Sanchez. Todos los derechos reservados.'
+            : '© 2025 Henry Sanchez. All rights reserved.';
+      
+          // Navegación - links con atributos data-es y data-en
+          document.querySelectorAll('#nav-links a').forEach(link => {
+            link.textContent = isSpanish ? link.getAttribute('data-es') : link.getAttribute('data-en');
+          });
         });
-    </script>
+      </script>
+      
 
        
   
