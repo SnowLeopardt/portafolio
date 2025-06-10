@@ -201,6 +201,7 @@
                             </div><!-- /.portfolio-item-info -->
                         </div>
                     </div>
+                    
                     <div class="col-md-4 col-xs-6">
                         <div class="portfolio-item">
                             <img src="assets/img/portfolio-2.jpg" class="img-res" alt="">
@@ -231,6 +232,57 @@
                     </div>
                 </div>
             </section><!-- /.secton-portfolio -->
+
+
+                  <section id="service" class="site-section section-services overlay text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 id="interests-title" data-es="Intereses" data-en="Interests">Intereses</h3>
+                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/front-end.svg" alt="Front End Developer">
+                            <h4>Front-end</h4>
+                            <p 
+                              data-es="En frontend trabajo con tecnologías como HTML, CSS y Bootstrap para diseñar interfaces web atractivas y responsivas. Me enfoco en la estructura y el diseño de las páginas para que sean intuitivas y funcionales. Además, tengo conocimientos de PHP, lo que me permite integrar la parte visual con la lógica del backend cuando es necesario." 
+                              data-en="In frontend, I work with technologies like HTML, CSS, and Bootstrap to design attractive and responsive web interfaces. I focus on structure and design to ensure pages are intuitive and functional. Additionally, I have knowledge of PHP, which allows me to integrate the visual part with backend logic when needed.">
+                              En frontend trabajo con tecnologías como HTML, CSS y Bootstrap para diseñar interfaces web atractivas y responsivas...
+                            </p>
+
+                        </div><!-- /.service -->
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/consultancy.svg" alt="Coding">
+                            <h4>Redes</h4>
+                            <p 
+                              data-es="Además de brindar servicios de Diseño, también me capacito en la administración de redes públicas y bases de datos." 
+                              data-en="In addition to offering design services, I also train in the administration of public networks and databases.">
+                              Además de brindar servicios de Diseño, tambien me capacito en la administracion de redes publicas y administraciones de base datos
+                            </p>
+
+                        </div><!-- /.service -->
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/back-end.svg" alt="Coding">
+                            <h4>Back-end</h4>
+                            <p 
+                              data-es="También aplico conocimiento en el área de desarrollo, en especial con el lenguaje PHP. Me enfoco en las funcionalidades básicas como botones, acciones y direccionamiento." 
+                              data-en="I also apply knowledge in the development area, especially with PHP. I focus on basic functionalities such as buttons, actions, and routing.">
+                              Tambien aplico conocimiento en el area de desarrollo en especial con el lenguaje php...
+                            </p>
+
+                        </div><!-- /.service -->
+
+                    
+                </div>
+            </div>
+        </section><!-- /.secton-services -->
 
 
 
@@ -333,6 +385,17 @@
           projectDescriptions.forEach(p => {
           p.textContent = isSpanish ? p.getAttribute('data-es') : p.getAttribute('data-en');
           });
+
+          // Título de intereses
+          const interestsTitle = document.getElementById('interests-title');
+          interestsTitle.textContent = isSpanish ? interestsTitle.getAttribute('data-es') : interestsTitle.getAttribute('data-en');
+
+          // Párrafos de intereses
+          const interestParagraphs = document.querySelectorAll('#service.section-services .service p');
+          interestParagraphs.forEach(p => {
+          p.textContent = isSpanish ? p.getAttribute('data-es') : p.getAttribute('data-en');
+          });
+
 
       
           // Contadores
