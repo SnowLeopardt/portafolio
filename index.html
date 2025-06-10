@@ -312,20 +312,28 @@
     
                     <h3>Contacto</h3>
                     <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <input type="text" name="name" class="form-control mt-x-0" placeholder="Nombre" required>
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="email" name="email" class="form-control" placeholder="Correo" required>   
-                            </div>
-                            <div class="col-sm-12">
-                                <textarea name="message" id="mesaage" class="form-control" placeholder="Mensaje..." required></textarea>
-                            </div>
-                        </div>
-                        <button href="#" class="btn btn-border" type="submit">Contratame<span class="glyphicon glyphicon-send"></span></button>
-                    </form>
+                    <form id="contact-form" action="https://formsubmit.co/henrysanchez7920@gmail.com" method="POST">
+    <!-- Evita el captcha y redirecciones -->
+                          <input type="hidden" name="_captcha" value="false">
+                          <input type="hidden" name="_next" value="">
+
+                  <div class="row">
+        <div class="col-sm-6">
+            <input type="text" name="Nombre" class="form-control mt-x-0" placeholder="Nombre" required>
+        </div>
+        <div class="col-sm-6">
+            <input type="email" name="Email" class="form-control" placeholder="Correo" required>
+        </div>
+        <div class="col-sm-12">
+            <textarea name="Mensaje" class="form-control" placeholder="Mensaje..." required></textarea>
+        </div>
+    </div>
+    <button class="btn btn-border" type="submit">Contrátame</button>
+</form>
+<div id="thank-you-message" style="display: none; margin-top: 20px; color: green; font-weight: bold;">
+    Gracias por contactarme. Pronto responderé a su mensaje :D.
+</div>
+
                 </div>
             </section><!-- /.section-form -->
 
@@ -449,6 +457,34 @@
             }
         });
     </script>
+
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Detiene el envío automático
+
+    // Crea un formulario de datos
+    const formData = new FormData(this);
+
+    // Envía el formulario usando fetch
+    fetch(this.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            this.reset(); // Limpia el formulario
+            document.getElementById("thank-you-message").style.display = "block";
+        } else {
+            alert("Hubo un error. Por favor, intenta de nuevo.");
+        }
+    }).catch(error => {
+        alert("Error de conexión. Intenta más tarde.");
+    });
+});
+</script>
 
 
 
